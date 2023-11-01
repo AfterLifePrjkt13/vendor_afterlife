@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
     AfterHomeQuickStep \
     NeverLandStub
 
+# Inherit SystemUI Clocks if they exist
+$(call inherit-product-if-exists, vendor/SystemUIClocks/product.mk)
+
 # Vendor Certification
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
