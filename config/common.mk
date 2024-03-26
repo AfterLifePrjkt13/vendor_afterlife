@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
     AfterHomeQuickStep \
     NeverLandStub
 
+# Vendor Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 include vendor/afterlife/config/version.mk
 include vendor/afterlife/config/bootanimation.mk
 include vendor/afterlife/config/telephony.mk
