@@ -180,7 +180,9 @@ PRODUCT_PACKAGES += \
 # Apps
 PRODUCT_PACKAGES += \
     AfterHomeQuickStep \
-    NeverLandStub
+    NeverLandStub \
+    Glimpse \
+    LatinIME \
 
 # Inherit SystemUI Clocks if they exist
 $(call inherit-product-if-exists, vendor/SystemUIClocks/product.mk)
